@@ -18,9 +18,9 @@ body{
 }
 
 .header-left--text{
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(255, 255, 255);
-    margin: 0 20px 0 40px;
+    margin: 0 5px 0 40px;
 }
 
 .header-left--img{
