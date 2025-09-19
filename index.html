@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sanitize.css">
+    <title>check medicine</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <p class="header-left--text">お薬チェック</p>
+            <div class="header-left--img">
+                <div class="header-left--img-top"></div>
+                <div class="header-left--img-bottom"></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right--reload">
+                <button class="header-right--reload-button" onclick="reloadPage()">ページをリロード</button>
+                <!-- 現在のページをリロードするjavascript -->
+                <script>
+                    function reloadPage() {
+                        window.location.reload();
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+    <div class="content-cover">
+        <main class="content">
+            <div class="content-check">
+                <input class="content-check--checkbox" type="checkbox" id="morning" name="morning" value="morning">
+                <label class="content-check--text" for="morning">朝</label>
+            </div>
+            <div class="content-check">
+                <input class="content-check--checkbox" type="checkbox" id="day" name="day" value="day">
+                <label class="content-check--text" for="day">昼</label>
+            </div>
+            <div class="content-check">
+                <input class="content-check--checkbox" type="checkbox" id="evening" name="evening" value="evening">
+                <label class="content-check--text" for="evening">夜</label>
+            </div>
+            <div class="content-check">
+                <input class="content-check--checkbox" type="checkbox" id="midnight" name="midnight" value="midnight">
+                <label class="content-check--text" for="midnight">寝る前</label>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
